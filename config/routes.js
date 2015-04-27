@@ -32,9 +32,8 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/': {
-    view: 'homepage'
-  }
+  '/': 'PageController.homepage',
+ 
 
   /***************************************************************************
   *                                                                          *
@@ -45,5 +44,16 @@ module.exports.routes = {
   * for configuration options and examples.                                  *
   *                                                                          *
   ***************************************************************************/
+	
+	'get /login': 'AuthController.loginPage',
+	'post /login': 'AuthController.login',
+
+	'get /logout': 'AuthController.logout',
+	
+	'get /product/:id': 'ProductController.bower',
+	
+	
+	'get /user/:id': 'UserController.bower'
+
 
 };

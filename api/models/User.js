@@ -1,7 +1,9 @@
 var User = {
 
   // Identity is a unique name for this model and must be in lower case
-  identity: 'user',
+  identity: 'User',
+  schema: true,
+  tableName: 'user',
 
   // Connection
   // A named connection which will be used to read/write to the datastore
@@ -12,8 +14,16 @@ var User = {
       unique: true,
       size: 24
     },
+    password: {
+      type: 'string',
+      size: 100
+    },
     age: {
       type: 'integer'
+    },
+    products: {
+    	collection: 'Product',
+    	via: 'owner'
     }
   }
 };

@@ -8,7 +8,7 @@
  * For more information on configuration, check out:
  * http://sailsjs.org/#/documentation/reference/sails.config/sails.config.http.html
  */
-
+var logger = require('morgan');
 module.exports.http = {
 
   /****************************************************************************
@@ -21,7 +21,7 @@ module.exports.http = {
   *                                                                           *
   ****************************************************************************/
 
-  // middleware: {
+     middleware: {
 
   /***************************************************************************
   *                                                                          *
@@ -30,23 +30,25 @@ module.exports.http = {
   *                                                                          *
   ***************************************************************************/
 
-    // order: [
-    //   'startRequestTimer',
-    //   'cookieParser',
-    //   'session',
-    //   'myRequestLogger',
-    //   'bodyParser',
-    //   'handleBodyParserError',
-    //   'compress',
-    //   'methodOverride',
-    //   'poweredBy',
-    //   '$custom',
-    //   'router',
-    //   'www',
-    //   'favicon',
-    //   '404',
-    //   '500'
-    // ],
+       order: [
+         'startRequestTimer',
+         'cookieParser',
+         'session',
+         'myRequestLogger',
+         'bodyParser',
+         'handleBodyParserError',
+         'compress',
+         'methodOverride',
+         'poweredBy',
+         'logger',
+         '$custom',
+         'router',
+         'www',
+         'favicon',
+         '404',
+         '500'
+       ],
+       logger: logger('dev')
 
   /****************************************************************************
   *                                                                           *
@@ -71,7 +73,7 @@ module.exports.http = {
 
     // bodyParser: require('skipper')
 
-  // },
+     },
 
   /***************************************************************************
   *                                                                          *

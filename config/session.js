@@ -11,7 +11,7 @@
  * For more information on configuring the session, check out:
  * http://sailsjs.org/#/documentation/reference/sails.config/sails.config.session.html
  */
-
+var mysqlSession = require('express-mysql-session');
 module.exports.session = {
 
   /***************************************************************************
@@ -23,7 +23,14 @@ module.exports.session = {
   ***************************************************************************/
   secret: '4a922ea9a1c870ceb60d8ccb90609060',
 
-
+	store: new mysqlSession({
+	    host: '127.0.0.1',
+	    user: 'root',
+	    password: 'root',
+	    database: 'nb',
+	    port:3306,
+	    expiration: 86400000
+	})
   /***************************************************************************
   *                                                                          *
   * Set the session cookie expire time The maxAge is set by milliseconds,    *
