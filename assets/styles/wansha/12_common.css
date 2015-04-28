@@ -1,0 +1,109 @@
+/**
+  * @name zhangyy-g@grandsoft.com.cn 
+  * @description zhangyy's code
+  * Date: 15/2/7
+  * Time: 下午5:40
+  *
+  */
+/**状态按钮**/
+.status-btn {
+    width: 158px;
+    height: 44px;
+    line-height: 44px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid #2ecbda;
+    border-radius: 5px;
+    margin-left: 20px;
+    cursor: pointer;
+    display: inline-block;
+    -webkit-transition: opacity .3s ease-in;
+    transition: opacity .3s ease-in;
+}
+
+.status-btn:hover{
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.apply-btn {
+    background-color: #2ecbda;
+    color: #fff;
+}
+
+.trying-btn {
+    background-color: #e6f6f8;
+    color: #21b7c6;
+}
+
+.closed-btn {
+    color: #21b7c6;
+}
+
+/**帮助**/
+.mod-try-help {
+}
+
+.mod-try-help h2 {
+    font-size: 20px;
+}
+
+.mod-try-help .desc {
+    font-size: 14px;
+    color: #555;
+    margin: 20px 20px 10px 20px;
+}
+
+.mod-try-help a {
+    margin: 0 20px;
+    color: #21b7c6;
+    font-size: 15px;
+}
+
+.mod-try-help .step-wrap {
+    margin-top: 12px;
+}
+
+.mod-try-help .step span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.mod-try-help .step .item {
+    background-color: #2ecbda;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+}
+
+.mod-try-help .step .divide {
+    width: 36px;
+    height: 2px;
+    background-color: #ddd;
+    margin: 0 2px;
+}
+
+.mod-try-help .step-desc {
+    margin-top: 10px;
+}
+
+.mod-try-help .step-desc .item {
+    display: inline-block;
+    width: 26px;
+    height: 78px;
+    border-radius: 13px;
+    background-color: #e0eff0;
+    color: #21b7c6;
+    text-align: center;
+    line-height: 1.2em;
+    padding-top: 12px;
+    margin-left: 44px;
+}
+
+.mod-try-help .step-desc .item:first-child {
+    margin-left: 2px;
+}

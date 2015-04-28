@@ -44,7 +44,9 @@ module.exports.routes = {
   * for configuration options and examples.                                  *
   *                                                                          *
   ***************************************************************************/
-	
+	'get /test/file': {view: 'test/file'},
+
+	'post /file/upload': 'ProductController.upload',
 	'get /login': 'AuthController.loginPage',
 	'post /login': 'AuthController.login',
 

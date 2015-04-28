@@ -1,0 +1,206 @@
+/**
+  * @name zhangyy-g@grandsoft.com.cn 
+  * @description zhangyy's code
+  * Date: 15/1/25
+  * Time: 下午7:41
+  *
+  */
+.mod-slide {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.mod-slide .slide-left {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -50px;
+    background-image: url(1_slide.png);
+    width: 44px;
+    height: 100px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.mod-slide .slide-left:hover {
+    background-position: -44px 0;
+}
+
+.mod-slide .slide-right {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -50px;
+    background-image: url(1_slide.png);
+    width: 44px;
+    height: 100px;
+    cursor: pointer;
+    background-position: -88px 0;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.mod-slide .slide-right:hover {
+    background-position: -132px 0;
+}
+
+.minisite .mod-slide .slide-left,
+.minisite .mod-slide .slide-right {
+    display: none;
+}
+
+.mod-slide .slide-items {
+    position: absolute;
+    left: 0;
+    height: 100%;
+}
+
+.mod-slide .slide-item {
+    float: left;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.minisite .mod-slide .slide-item {
+    overflow: inherit;
+}
+
+.mod-slide .slide-item .item-bg {
+    width: 100%;
+    height: 100%;
+}
+
+.minisite .mod-slide .slide-item .item-bg {
+    height: 208px;
+}
+
+.mod-slide .slide-item .item-title {
+    position: absolute;
+    height: 65px;
+    padding: 0 20px;
+    left: 0;
+    right: 0;
+    background-color: rgba(136, 136, 136, 0.2);
+    color: #21b7c6;
+    bottom: 0;
+    -webkit-transition: bottom .3s ease-in;
+    -moz-transition: bottom .3s ease-in;
+    -o-transition: bottom .3s ease-in;
+    transition: bottom .3s ease-in;
+}
+
+.minisite .mod-slide .slide-item .item-title {
+    bottom: 0;
+    height: 100px;
+    padding: 0 5px;
+}
+
+.mod-slide:hover .slide-item .item-title {
+    bottom: 0;
+}
+
+.mod-slide .title-info {
+    display: inline-block;
+    vertical-align: middle;
+    width: 70%;
+}
+
+.minisite .mod-slide .title-info {
+    width: 100%;
+}
+
+.minisite .mod-slide .title-info p {
+    line-height: 18px;
+}
+
+.mod-slide .title-info .title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    width: 100%;
+    margin-top: 2px;
+    font-size: 18px;
+    color: #21b7c6;
+}
+
+.mod-slide .title-info .info-tag {
+    display: inline-block;
+    vertical-align: middle;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 8px;
+    background-color: #e0eff0;
+    color: #21b7c6;
+    border-radius: 13px;
+    margin-right: 8px;
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+
+.minisite .mod-slide .title-info .info-tag {
+    background-color: transparent;
+    border: 1px solid #21b7c6;
+}
+
+.minisite .mod-slide .title-info .apply-info,
+.minisite .mod-slide .title-info .rest-info {
+    display: none;
+}
+
+.mod-slide .item-title .try-btn {
+    display: inline-block;
+    width: 120px;
+    height: 36px;
+    line-height: 36px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid #2ecbda;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #2ecbda;
+    color: #fff;
+    vertical-align: middle;
+}
+
+.mod-slide .item-title .try-btn:hover {
+    text-decoration: none;
+}
+
+.minisite .mod-slide .item-title .try-btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 2px;
+    width: 94%;
+}
+
+.mod-slide .slide-index {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.minisite .mod-slide .slide-index {
+    bottom: 102px;
+    right: 46px;
+}
+
+.mod-slide .slide-index .index-item {
+    width: 10px;
+    height: 10px;
+    background-image: url(1_slide.png);
+    background-position: -180px -20px;
+    float: left;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.mod-slide .slide-index .index-item.active {
+    background-position: -180px 0;
+}

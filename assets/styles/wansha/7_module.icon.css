@@ -1,0 +1,45 @@
+/**
+  * @name zhangyy-g@grandsoft.com.cn 
+  * @description zhangyy's code
+  * Date: 15/1/27
+  * Time: 下午10:46
+  *
+  */
+[class^="gicon-"],
+[class*="gicon-"] {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    vertical-align: middle;
+    background: url(1_icons.png) no-repeat;
+}
+
+.gicon-heart {
+    background-position: 0 0;
+}
+
+.gicon-hot {
+    width: 29px;
+    background-position: -20px 0;
+}
+
+.gicon-like {
+    background-position: -60px 0;
+}
+
+.gicon-comment {
+    background-position: -80px 0;
+}
+
+.gicon-smember {
+    background-position: -100px 0;
+}
+
+.gicon-timer {
+    background-position: -120px 0;
+}
+
+.gicon-arrow-down {
+    background-position: -140px 0;
+}

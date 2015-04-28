@@ -1,0 +1,64 @@
+/**
+  * @name zhangyy-g@grandsoft.com.cn 
+  * @description zhangyy's code
+  * Date: 14/11/7
+  * Time: 下午2:47
+  *
+  */
+.page-wrap{
+    margin-top: 20px;
+}
+.mod-page{
+    overflow: hidden;
+}
+.mod-page div,
+.mod-page a{
+    float: left;
+    color: #2ecbda;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 15px;
+}
+.mod-page a:hover {
+    text-decoration: underline;
+}
+
+.mod-page a.page-index{
+    width: 30px;
+    text-align: center;
+    border: 1px solid #2ecbda;
+    border-radius: 15px;
+}
+
+.mod-page a.disabled{
+    color: #999;
+    background-color: #fff;
+}
+
+.mod-page .page-index{
+    text-align: center;
+}
+
+.mod-page .page-index.active{
+    color: #999;
+    background-color: #fff;
+    background-color: #2ecbda;
+    border-radius: 15px;
+    color: #fff;
+}
+.mod-page .page-index.active,
+.mod-page a.disabled{
+    text-decoration: none;
+    cursor: default;
+}
+
+.mod-page .page-dots{
+    margin-right: 15px;
+    border: 1px solid #2ecbda;
+    width: 30px;
+    height: 30px;
+    line-height: 22px;
+    text-align: center;
+    border-radius: 15px;
+}

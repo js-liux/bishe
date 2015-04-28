@@ -1,0 +1,339 @@
+/**
+  * @name zhangyy-g@grandsoft.com.cn 
+  * @description zhangyy's code
+  * Date: 15/1/25
+  * Time: 下午8:19
+  *
+  */
+.mod-index {
+
+}
+
+.mod-index .content {
+    width: 780px;
+}
+
+.minisite .mod-index .content {
+    width: 100%;
+    float: inherit;
+}
+
+/**幻灯片**/
+.mod-index .slide-wrap {
+    width: 100%;
+    height: 260px;
+}
+
+.minisite .mod-index .slide-wrap {
+    height: 308px;
+}
+
+/**试用列表**/
+.mod-try {
+    margin-top: 30px;
+}
+
+.mod-try .type {
+    margin-left: 10px;
+}
+
+.mod-try .type a {
+    font-size: 16px;
+    color: #888;
+    display: inline-block;
+    vertical-align: bottom;
+    line-height: 16px;
+}
+
+.mod-try .type a.active {
+    font-size: 22px;
+    color: #333;
+    line-height: 22px;
+}
+
+.mod-try .type .divide {
+    display: inline-block;
+    vertical-align: bottom;
+    height: 16px;
+    width: 1px;
+    background-color: #888;
+    margin: 0 10px;
+}
+
+.mod-try .items {
+    margin-top: 12px;
+    margin-left: -40px;
+}
+
+.minisite .mod-try .items {
+    margin-left: 0;
+}
+
+.mod-try .items .item {
+    width: 370px;
+    margin-left: 40px;
+    float: left;
+    height: 320px;
+    margin-bottom: 30px;
+}
+
+.minisite .mod-try .items .item {
+    float: inherit;
+    width: 96%;
+    height: auto;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.mod-try .item .cover-img {
+    width: 100%;
+    height: 185px;
+}
+
+.mod-try .item .info {
+    height: 80px;
+    border-bottom: 1px solid #ddd;
+    text-align: right;
+}
+
+.minisite .mod-try .item .info {
+    display: none;
+}
+
+.mod-try .item .info.closed-info {
+    filter: alpha(opacity=50); /*IE滤镜，透明度50%*/
+    -moz-opacity: 0.5; /*Firefox私有，透明度50%*/
+    opacity: 0.5; /*其他，透明度50%*/
+}
+
+.mod-try .info .count {
+    display: inline-block;
+    font-size: 60px;
+    font-weight: lighter;
+    color: #444;
+    font-family: Helvetica Neue, Helvetica, Arial;
+}
+
+.mod-try .info .unit {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    background-color: #999;
+    border-radius: 2px;
+    margin-left: 5px;
+}
+
+.mod-try .info .divide {
+    height: 50px;
+    width: 1px;
+    display: inline-block;
+    background-color: #ddd;
+    margin: 0 20px;
+}
+
+.mod-try .info .wrap {
+    display: inline-block;
+    width: 200px;
+    text-align: left;
+}
+
+.mod-try .info .title {
+    display: inline-block;
+    max-height: 34px;
+    overflow: hidden;
+    line-height: 1.2em;
+}
+
+.mod-try .info .title:hover {
+    text-decoration: underline;
+    color: #21b7c6;
+}
+
+.mod-try .info .price {
+    font-size: 20px;
+}
+
+.mod-try .item .mini-info {
+    display: none;
+}
+
+.minisite .mod-try .item .mini-info {
+    display: block;
+    margin-top: 10px;
+}
+
+.mod-try .mini-info .info-tag {
+    display: inline-block;
+    vertical-align: middle;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 15px;
+    background-color: #e0eff0;
+    color: #21b7c6;
+    border-radius: 15px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.mod-try .status {
+    margin-top: 10px;
+    height: 44px;
+    text-align: right;
+    color: #666;
+}
+
+.mod-try .status span {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.mod-try .status .count {
+    font-size: 22px;
+    margin-right: 10px;
+    line-height: 24px;
+}
+
+.mod-try .status .gicon-smember {
+    margin-left: -8px;
+}
+
+.mod-try .status .trying-desc {
+    color: #21b7c6;
+}
+
+/**分页**/
+.page-wrap {
+    margin-top: 60px;
+}
+
+/**侧边栏**/
+.mod-index .aside {
+    width: 260px;
+}
+
+.minisite .mod-index .aside {
+    display: none;
+}
+
+/**用户信息**/
+.mod-user {
+    margin-bottom: 50px;
+    height: 260px;
+    text-align: center;
+}
+
+.mod-user .avatar {
+    vertical-align: middle;
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    background-color: #21b7c6;
+}
+
+.mod-user .nickname {
+    font-size: 20px;
+    color: #333;
+    margin-left: 10px;
+    vertical-align: middle;
+    max-width: 180px;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.mod-user .trystats {
+    margin-top: 12px;
+    color: #666;
+}
+
+.mod-user .stat-info {
+    display: inline-block;
+    width: 123px;
+    height: 103px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    vertical-align: middle;
+}
+
+.mod-user .stat-info:hover {
+    background-color: #f6f6f6;
+}
+
+.mod-user .trying {
+    margin-left: 10px;
+}
+
+.mod-user .trystats .count {
+    color: #444;
+    font-size: 38px;
+    margin-top: 5px;
+    margin-bottom: -10px;
+    display: inline-block;
+}
+
+.mod-user .trying .count {
+    color: #21b7c6;
+}
+
+.mod-user .wanted-btn {
+    width: 260px;
+    height: 50px;
+    margin-top: 7px;
+    background-color: #ff6666;
+    color: #fff;
+    font-size: 18px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.mod-try-help-wrap {
+    margin-bottom: 50px;
+}
+
+/**热门评测**/
+.mod-hot-articles h2 {
+    font-size: 20px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.mod-hot-articles .article {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.mod-hot-articles .article .article-bg {
+    width: 100px;
+    height: 60px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.mod-hot-articles .article .article-info {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    width: 150px;
+}
+
+.mod-hot-articles .article .article-count {
+    color: #888;
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+.mod-hot-articles .article .gicon-like {
+    margin-left: 10px;
+}
+
+.mod-hot-articles .article .gicon-comment {
+    margin-left: 20px;
+}

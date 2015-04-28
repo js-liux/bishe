@@ -1,0 +1,21 @@
+/**
+ * author: @huntbao
+ * description: jQuery placeholder css
+*/
+.placeholder-inp-wrap {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+.placeholder-inp-wrap label {
+    position: absolute;
+    top: 5px;
+    left: 7px;
+    color: #ccc;
+    cursor: text;
+}
+
+

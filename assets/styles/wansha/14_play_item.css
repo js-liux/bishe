@@ -1,0 +1,219 @@
+/**
+ * Created by jade on 15-4-13.
+ */
+/**问题头部**/
+.play-header {
+    margin-bottom: 20px;
+    height: 60px;
+    background-color: #f2f2f2;
+    padding: 0 10px;
+}
+
+.minisite .play-header {
+    margin: 10px 0;
+    background-color: #f9f9f9;
+    padding: 0;
+}
+
+.play-header a {
+    display: inline-block;
+    width: 20%;
+    max-width: 100px;
+    height: 40px;
+    margin-top: 10px;
+    color: #2ecbda;
+    text-align: center;
+    line-height: 40px;
+    vertical-align: middle;
+}
+
+.play-header a:hover,
+.play-header a.active {
+    background-color: #2ecbda;
+    color: #fff;
+}
+
+.minisite .play-header a {
+    margin-top: 10px;
+}
+
+.play-header .fabiao {
+    width: 90px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #2ecbda;
+    vertical-align: middle;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.minisite .play-header .fabiao {
+    display: none;
+}
+
+/**文章列表**/
+.article-item-wrap {
+
+}
+
+.article-item-wrap .item {
+    margin-top: 20px;
+    position: relative;
+    min-height: 120px;
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 20px;
+}
+
+.minisite .article-item-wrap {
+    display: none;
+}
+
+.article-item-wrap .pic-wrap {
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    width: 200px;
+    height: 120px;
+}
+
+.article-item-wrap .pic {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.article-item-wrap .detail {
+    position: absolute;
+    left: 210px;
+    right: 0;
+}
+
+.article-item-wrap .title {
+    font-size: 16px;
+    color: #666;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+.article-item-wrap .title:hover {
+    color: #21b7c6;
+}
+
+.article-item-wrap .time {
+    color: #888;
+    float: right;
+}
+.article-item-wrap .user {
+    color: #999;
+    float: left;
+}
+
+.article-item-wrap .user .avatar {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.article-item-wrap .count {
+    float: left;
+    margin-left: 20px;
+    color: #999;
+}
+
+.article-item-wrap .introduction {
+    height: 45px;
+    overflow: hidden;
+    margin-top: 15px;
+    color: #8f8f8f;
+}
+
+.article-item-wrap .introduction a {
+    color: #21b7c6;
+}
+
+.article-item-wrap .introduction a:hover {
+    text-decoration: underline;
+}
+
+/**小屏文章列表**/
+.min-article-item-wrap {
+    display: none;
+    padding: 0 5px;
+    margin-top: 20px;
+}
+.min-article-item-wrap .item {
+    margin-top: 5px;
+    position: relative;
+    min-height: 95px;
+    border-bottom: 1px solid #ddd;
+
+}
+
+.minisite .min-article-item-wrap {
+    display: block;
+}
+
+.min-article-item-wrap .pic-wrap {
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    width: 110px;
+    height: 65px;
+}
+
+.min-article-item-wrap .pic {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.min-article-item-wrap .detail {
+    position: absolute;
+    left: 115px;
+    right: 0;
+}
+
+.min-article-item-wrap .title {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 45px;
+}
+
+.min-article-item-wrap .time {
+    color: #888;
+    float: right;
+}
+.min-article-item-wrap .user {
+    color: #888;
+    float: left;
+}
+.min-article-item-wrap .tag {
+    float: left;
+}
+.min-article-item-wrap .tag .tag-info {
+    display: inline-block;
+    vertical-align: middle;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 5px;
+    background-color: #e0eff0;
+    color: #21b7c6;
+    border-radius: 15px;
+    margin-right: 2px;
+    font-size: 12px;
+}
+.min-article-item-wrap .count {
+    float: right;
+    margin-top: 3px;
+    color: #888;
+}

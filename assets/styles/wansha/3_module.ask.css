@@ -1,0 +1,141 @@
+.mod-ask {
+
+}
+
+.mod-ask h2 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #666;
+}
+
+.mod-ask div,
+.mod-ask textarea {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.mod-ask .desc-wrap {
+    width: 96%;
+    padding: 0 2%;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #ddd;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.mod-ask .desc-wrap .desc-input {
+    width: 100%;
+    height: 100%;
+}
+
+.mod-ask .ask-rule {
+    color: #21b7c6;
+}
+
+.mod-ask h3 {
+    margin: 0;
+    font-size: 15px;
+    color: #666;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.mod-ask .tag-wrap {
+    margin-top: 15px;
+    position: relative;
+}
+
+.mod-ask .tag-input-wrap {
+    float: left;
+    position: relative;
+    margin-top: 20px;
+}
+
+.mod-ask .tag-input-wrap .tag-input {
+    width: 220px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 5px;
+    border: 1px solid #ddd;
+}
+
+.minisite-dialog .mod-ask .tag-input {
+    width: 100%;
+}
+
+.mod-ask .tag-input-wrap .tag-input-txt {
+    width: 70px;
+    display: inline-block;
+}
+
+.mod-ask .tag-input-wrap .tag-search-panel {
+    position: absolute;
+    top: 41px;
+    left: 0;
+    right: 0;
+    border: 1px solid #ddd;
+    display: none;
+    background-color: #fff;
+}
+
+.mod-ask .tag-search-panel .tag-search-item,
+.mod-ask .tag-search-panel .tag-create-item {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #666;
+}
+
+.mod-ask .tag-search-panel .tag-search-item:hover,
+.mod-ask .tag-search-panel .tag-search-item.active,
+.mod-ask .tag-search-panel .tag-create-item:hover,
+.mod-ask .tag-search-panel .tag-create-item.active {
+    background-color: rgba(46, 203, 218, 0.25);
+    color: #2ecbda;
+}
+
+.mod-ask .tag-create-item .tag-name {
+    display: inline-block;
+    max-width: 100px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+}
+
+.mod-ask .tag-suggest {
+    margin-left: -10px;
+    overflow: hidden;
+}
+
+.mod-ask .tag-suggest .tag-item {
+    display: inline-block;
+    color: #999;
+    padding: 6px 12px;
+    border: 1px solid #2ecbda;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.mod-ask .tag-suggest .tag-item:hover,
+.mod-ask .tag-suggest .tag-item.active {
+    background-color: rgba(46, 203, 218, 0.25);
+    color: #2ecbda;
+}
+
+.mod-ask .submit-btn {
+    padding: 10px 40px;
+    background: #2ecbda;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    color: #fff;
+}
