@@ -13,6 +13,7 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "~3.3.4"
+    "bootstrap": "~3.3.4",
+    "bxslider-4": "~4.2.3"
   }
 }

@@ -8,12 +8,14 @@
 		<!-- start slider -->
 		<script type="text/javascript">
 			$(function() {
+			console.log("slider");
 				$('#da-slider').cslider();
 			});
 		</script>
 
 		<script>
 			$(document).ready(function() {
+			console.log("index ready");
 				$("#owl-demo").owlCarousel({
 					items: 4,
 					lazyLoad: true,
@@ -169,7 +171,7 @@
 					<div class="grids_of_3">
 						<div class="grid1_of_3">
 							<a href="details.html">
-								<img src="../assets/images/pic1.jpg" alt="" />
+								<img src="/images/pic1.jpg" alt="" />
 								<h3>branded shoes</h3>
 								<div class="price">
 									<h4>$300<span>indulge</span></h4>
@@ -179,7 +181,7 @@
 						</div>
 						<div class="grid1_of_3">
 							<a href="details.html">
-								<img src="../assets/images/pic2.jpg" alt="" />
+								<img src="/images/pic2.jpg" alt="" />
 								<h3>branded t-shirts</h3>
 								<div class="price">
 									<h4>$300<span>indulge</span></h4>
@@ -189,7 +191,7 @@
 						</div>
 						<div class="grid1_of_3">
 							<a href="details.html">
-								<img src="../assets/images/pic3.jpg" alt="" />
+								<img src="/images/pic3.jpg" alt="" />
 								<h3>branded tees</h3>
 								<div class="price">
 									<h4>$300<span>indulge</span></h4>
@@ -202,7 +204,7 @@
 					<div class="grids_of_3">
 						<div class="grid1_of_3">
 							<a href="details.html">
-								<img src="../assets/images/pic4.jpg" alt="" />
+								<img src="/images/pic4.jpg" alt="" />
 								<h3>branded bags</h3>
 								<div class="price">
 									<h4>$300<span>indulge</span></h4>
@@ -212,7 +214,7 @@
 						</div>
 						<div class="grid1_of_3">
 							<a href="details.html">
-								<img src="../assets/images/pic5.jpg" alt="" />
+								<img src="/images/pic5.jpg" alt="" />
 								<h3>ems women bag</h3>
 								<div class="price">
 									<h4>$300<span>indulge</span></h4>
@@ -222,7 +224,7 @@
 						</div>
 						<div class="grid1_of_3">
 							<a href="details.html">
-								<img src="../assets/images/pic6.jpg" alt="" />
+								<img src="/images/pic6.jpg" alt="" />
 								<h3>branded cargos</h3>
 								<div class="price">
 									<h4>$300<span>indulge</span></h4>
@@ -237,28 +239,4 @@
 			</div>
 		</div>
 		
-		
-
-		<!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo</button>
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Open modal for @fat</button>
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Open modal for @getbootstrap</button>
-...more buttons...-->
-
-		
-
-		<!--<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button aria-hidden="true" class="close" data-dismiss="modal" type="button">×</button>
-						<h4 class="modal-title"><i class="fa fa-plus"></i>分享新产品</h4>
-					</div>
-					<div class="modal-body clearfix">
-						<button class="btn" data-dismiss="modal" data-target="#new-thing-from-url-modal" data-toggle="modal"><i class="fa fa-globe fa-fw"></i>从网站收集</button>
-						<button class="btn" data-dismiss="modal" data-target="#new-thing-from-local" id="btn-to-new-local-thing-modal"><i class="fa fa-cloud-upload fa-fw"></i>本地上传</button>
-					</div>
-				</div>
-			</div>
-		</div>-->
-
-
 {% endblock %}

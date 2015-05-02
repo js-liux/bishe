@@ -63,7 +63,7 @@ module.exports.routes = {
 	
 	'get /user/:id': 'UserController.bower',
   
-	'get /index': 'IndexPageController.bower',
+	'get /index': {view: 'index'},
   'get /allProducts': {view: 'allProducts'},
   'get /play': {view: 'play'},
   'get /try': {view: 'try'}
