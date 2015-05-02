@@ -32,9 +32,8 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/': 'PageController.homepage',
+  '/': 'IndexPageController.bower',
  
-
   /***************************************************************************
   *                                                                          *
   * Custom routes here...                                                    *
@@ -63,7 +62,6 @@ module.exports.routes = {
 	
 	'get /user/:id': 'UserController.bower',
   
-	'get /index': {view: 'index'},
   'get /allProducts': {view: 'allProducts'},
   'get /play': {view: 'play'},
   'get /try': {view: 'try'}

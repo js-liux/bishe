@@ -14,10 +14,24 @@ module.exports = {
 		AllProduct.find().where({
 			ownerCategory: 1
 		}).then(function(sliders){
-			if (sliders.length > 0) {
-				sliderList = sliderList;
-			}
+			sliderList = sliders;
+			
+			AllProduct.find().where({
+				ownerCategory: 2
+			}).then(function(products){
+				productList = products;
+				var data = {
+					productList: productList,
+					sliderList: sliderList
+				};
+				res.view('index',data);
+			});
 		});
+
+
+
+		
+
 
 		
 			/*User.find().where({
