@@ -46,7 +46,13 @@ module.exports.routes = {
   ***************************************************************************/
 	'get /test/file': {view: 'test/file'},
 
-	'post /file/upload': 'ProductController.upload',
+	'post /file/upload': {
+		controller: 'ProductController',
+		action: 'upload',
+		cors: {
+			origin: '*'
+		}
+	},
 	'get /login': 'AuthController.loginPage',
 	'post /login': 'AuthController.login',
 
@@ -55,7 +61,13 @@ module.exports.routes = {
 	'get /product/:id': 'ProductController.bower',
 	
 	
-	'get /user/:id': 'UserController.bower'
+	'get /user/:id': 'UserController.bower',
+  
+	'get /index': 'IndexPageController.bower',
+  'get /allProducts': {view: 'allProducts'},
+  'get /play': {view: 'play'},
+  'get /try': {view: 'try'}
+
 
 
 };

@@ -1,30 +1,8 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>发现与选择科技产品 | 玩啥社区</title>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta charset="utf-8">
-		<meta name="Keywords" content="求推荐,数码推荐,选购经验,免费试用,手机,智能硬件">
-		<meta name="Description" content="玩啥是一个发现和选择靠谱科技产品的消费决策平台。玩啥通过结合专业评测、达人分享、朋友意见来为大众用户进行决策，帮用户用最少的精力地买到最合适、靠谱、高性价比的产品。">
-		<meta name="viewport" content="width=device-width,target-densitydpi=high-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<link rel="shortcut icon" type="image/x-icon" href="/static/images/favicon.ico">
-		<link rel="stylesheet" href="../assets/styles/wansha/10_jquery.placeholder.css">
-		<link rel="stylesheet" href="../assets/styles/wansha/11_module.slide.css">
-		<link rel="stylesheet" href="../assets/styles/wansha/12_common.css">
-		<link rel="stylesheet" href="../assets/styles/wansha/13_index.css">
-		<link rel="stylesheet" href="../assets/styles/wansha/14_module.page.css">
-		<link rel="stylesheet" href="../assets/styles/wansha/1_reset.css">
-		<link rel="stylesheet" href="../assets/styles/wansha/2_module.dialog.css">
-		<link rel="stylesheet" href="../assets/styles/wansha/3_module.ask.css">
-		<link rel="stylesheet" href="../assets/styles/wansha/4_module.layout.css">
-		<link rel="stylesheet" href="../assets/styles/wansha/5_module.common.css">
-		<link rel="stylesheet" href="../assets/styles/wansha/6_iconfont.css">
-		<link rel="stylesheet" href="../assets/styles/wansha/7_module.icon.css">
-		<link rel="stylesheet" href="../assets/styles/wansha/8_button.css">
-		<link rel="stylesheet" href="../assets/styles/wansha/9_module.smallnote.css">
-	</head>
+{% extends 'layout.html' %}
 
-	<body>
+{% block title %}免费试用{% endblock %}
+{% block content %}
+
 		<div id="wx_pic">
 			<img src="picture\1_dba8e96f6ed842fa9ec4250a8ac0402b.png">
 		</div>
@@ -356,18 +334,6 @@
 		
 		
 		
-		<!--Created by x on 14-7-30.-->
-		<script src="../assets/js/wansha/15_libs.min.js"></script>
-		<script src="../assets/js/wansha/16_module.common.js"></script>
-		<script src="../assets/js/wansha/17_module.dialog.js"></script>
-		<script src="../assets/js/wansha/18_module.ask.js"></script>
-		<script src="../assets/js/wansha/19_module.layout.js"></script>
-		<script src="../assets/js/wansha/20_module.smallnote.js"></script>
-		<script src="../assets/js/wansha/21_jquery.placeholder.js"></script>
-		
-		<div style="display:none;">
-			<script src="http://s95.cnzz.com/z_stat.php?id=1254443849&amp;web_id=1254443849" language="JavaScript"></script>
-		</div>
 		<script>
 			window.pageConfig = {
 				isMobile: false,
@@ -375,9 +341,5 @@
 				me: null || {}
 			}
 		</script>
-		<script src="../assets/js/wansha/22_touch.js"></script>
-		<script src="../assets/js/wansha/23_module.slide.js"></script>
-		<script src="../assets/js/wansha/24_index.js"></script>
-	</body>
-
-</html>
+		
+{% endblock %}

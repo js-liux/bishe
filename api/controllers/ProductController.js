@@ -1,5 +1,4 @@
 var dirname = require('path').resolve(__dirname, '../../.tmp/public/uploads');
-console.log(dirname);
 
 module.exports = {
 	
@@ -32,14 +31,19 @@ module.exports = {
 	    if (err) {
 	      return res.negotiate(err);
 	    }
-	
+		  console.log(uploadedFiles);
+
 	    // If no files were uploaded, respond with an error.
 	if (uploadedFiles.length === 0){
 	  return res.badRequest('No file was uploaded');
-	    }
+	}
+	var file =uploadedFiles[0];
+	  var index = file.fd.lastIndexOf('\\');
+	  console.log(index);
+	  var filename = file.fd.substr(index);
 		res.json({
-			url: uploadedFiles[0].fd
-		})
+			url: '/uploads/' + filename
+	})
 		
 	  });
 },

@@ -1,71 +1,12 @@
-<!DOCTYPE html>
-<html>
+{% extends 'layout.html' %}
 
-	<head>
-		<title>发现与选择科技产品 | 玩啥社区</title>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta charset="utf-8">
-		<meta name="Keywords" content="求推荐,数码推荐,选购经验,免费试用,手机,智能硬件">
-		<meta name="Description" content="玩啥是一个发现和选择靠谱科技产品的消费决策平台。玩啥通过结合专业评测、达人分享、朋友意见来为大众用户进行决策，帮用户用最少的精力地买到最合适、靠谱、高性价比的产品。">
-		<meta name="viewport" content="width=device-width,target-densitydpi=high-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<link rel="shortcut icon" type="image/x-icon" href="/static/images/favicon.ico">
-		<link rel="stylesheet" href="../assets/styles/wansha/1_reset.css">
-		<link rel="stylesheet" href="../assets/styles/wansha/2_module.dialog.css">
-		<link rel="stylesheet" href="../assets/styles/wansha/3_module.ask.css">
-		<link rel="stylesheet" href="../assets/styles/wansha/4_module.layout.css">
-		<link rel="stylesheet" href="../assets/styles/wansha/5_module.common.css">
-		<link rel="stylesheet" href="../assets/styles/wansha/6_iconfont.css">
-		<link rel="stylesheet" href="../assets/styles/wansha/7_module.icon.css">
-		<link rel="stylesheet" href="../assets/styles/wansha/8_button.css">
-		<link rel="stylesheet" href="../assets/styles/wansha/9_module.smallnote.css">
-		<link rel="stylesheet" href="../assets/styles/wansha/10_jquery.placeholder.css">
-		<link rel="stylesheet" href="../assets/styles/wansha/11_umeditor.min.css">
-		<link rel="stylesheet" href="../assets/styles/wansha/11_module.slide.css">
-		<link rel="stylesheet" href="../assets/styles/wansha/14_module.page.css">
-		<link rel="stylesheet" href="../assets/styles/wansha/14_play_item.css">
-		<link rel="stylesheet" href="../assets/styles/wansha/13_index.css">
-	</head>
-
-	<body>
+{% block title %}发现与选择科技产品{% endblock %}
+{% block content %}
 		<div id="wx_pic">
 			<img src="picture\1_dba8e96f6ed842fa9ec4250a8ac0402b.png">
 		</div>
 		<div class="mod-wanshar">
-			<div class="mod-main">
-				<div class="mod-header-container">
-					<div class="mod-header-wrap clr">
-						<a href="/">
-							<img src="picture\2_logo.png" class="logo">
-						</a>
-						<!--div.ask-headerspan.ask-input-wrap
-    input.ask-input(type="text" name="ask" placeholder="搜索问题、产品")
-span.ask-btn
-    em.licon-add
-    span &nbsp;提问-->
-						<div class="nav"><a href="/">首页</a>
-							<!--a(class="#{viewFilter.isEqual(tab, 'product', 'active')}" href="/product") 玩啥东西-->
-							<!--a(class="#{viewFilter.isEqual(tab, 'ask', 'active')}" href="/ask") 选购问答--><a href="/try">免费试用</a><a href="/play" class="active">玩啥发现</a>
-						</div>
-						<!--a(href='/article/edit' target="_blank").fabiaoem.licon-add
-span &nbsp;发表-->
-						<div class="unlogin"><a href="/login">登录</a><a href="/register">注册</a>
-						</div>
-					</div>
-					<div class="mod-mini-header-wrap clr">
-						<a href="/">
-							<img src="picture\3_logo.png" class="logo">
-						</a><a class="dropdown-btn f-r message-wrap"><span></span><span></span><span></span><div class="totalcount">0</div></a>
-						<div class="dropdown-wrap">
-							<div class="item-wrap">
-								<h2>频道</h2>
-								<div class="item"><a href="/">首页</a>
-									<!--a(href="/product" class="#{viewFilter.isEqual(tab, 'product', 'active')}") 玩啥东西-->
-									<!--a(href="/ask" class="#{viewFilter.isEqual(tab, 'ask', 'active')}") 选购问答--><a href="/try">免费试用</a><a href="/play" class="last active">玩啥发现</a><a href="/login" class="w50">登录</a><a href="/register" class="w50">注册</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+			
 				<div class="mod-content">
 					<div class="mod-index clr">
 						<div class="content f-l">
@@ -85,54 +26,8 @@ span &nbsp;发表-->
 												</div>
 											</div>
 										</a>
-										<a href="/try/46" target="_blank">
-											<div class="slide-item">
-												<img src="picture\5_8f55aa333ac84ae98db060d947b64ea8.jpg@!banner1" class="item-bg">
-												<div class="item-title">
-													<div class="title-info">
-														<p title="可监测心率和情绪的智能手环，37度手环试用" class="title">可监测心率和情绪的智能手环，37度手环试用</p>
-														<p><span class="info-tag">10 件</span><span class="info-tag">5 件可抽奖</span><span class="info-tag">￥99</span><span class="info-tag apply-info">14 人申请</span><span class="info-tag rest-info">6天8小时24分钟</span>
-														</p>
-													</div><a href="/try/46" target="_blank" class="try-btn status-btn">免费申请</a>
-												</div>
-											</div>
-										</a>
-										<a href="/try/25" target="_blank">
-											<div class="slide-item">
-												<img src="picture\6_f043b7d4272b45ddb8657d824f9c89bc.jpg@!banner1" class="item-bg">
-												<div class="item-title">
-													<div class="title-info">
-														<p title="10台Apple Watch抽奖，玩啥社区豁出去了！" class="title">10台Apple Watch抽奖，玩啥社区豁出去了！</p>
-														<p><span class="info-tag">10 件</span><span class="info-tag">10 件可抽奖</span><span class="info-tag">￥2588元</span><span class="info-tag apply-info">2623 人申请</span><span class="info-tag rest-info">已结束</span>
-														</p>
-													</div><a href="/try/25" target="_blank" class="try-btn status-btn">围观大神</a>
-												</div>
-											</div>
-										</a>
-										<a href="/try/44" target="_blank">
-											<div class="slide-item">
-												<img src="picture\7_fc88b6c2a6e84af0b6fdeb306e9079d5.jpg@!banner1" class="item-bg">
-												<div class="item-title">
-													<div class="title-info">
-														<p title="最美智能水杯，Waterever智能水杯首发试用！" class="title">最美智能水杯，Waterever智能水杯首发试用！</p>
-														<p><span class="info-tag">10 件</span><span class="info-tag">5 件可抽奖</span><span class="info-tag">￥429</span><span class="info-tag apply-info">537 人申请</span><span class="info-tag rest-info">已结束</span>
-														</p>
-													</div><a href="/try/44" target="_blank" class="try-btn status-btn">围观大神</a>
-												</div>
-											</div>
-										</a>
-										<a href="/try/43" target="_blank">
-											<div class="slide-item">
-												<img src="picture\8_851ca2b36c044179b14ced59326b6e56.jpg@!banner1" class="item-bg">
-												<div class="item-title">
-													<div class="title-info">
-														<p title="国内最强运动摄像头，萤石S1试用" class="title">国内最强运动摄像头，萤石S1试用</p>
-														<p><span class="info-tag">10 件</span><span class="info-tag">0 件可抽奖</span><span class="info-tag">￥1699</span><span class="info-tag apply-info">303 人申请</span><span class="info-tag rest-info">已结束</span>
-														</p>
-													</div><a href="/try/43" target="_blank" class="try-btn status-btn">围观大神</a>
-												</div>
-											</div>
-										</a>
+									
+										
 										<a href="/try/45" target="_blank">
 											<div class="slide-item">
 												<img src="picture\9_37ffc2b69f434ababaf31c5faf17277a.jpg@!banner1" class="item-bg">
@@ -1035,30 +930,7 @@ span &nbsp;发表-->
 		</div>
 		<div class="backtop"><i class="iconfont">&#xe600;</i>
 		</div>
-		<!--Created by x on 14-7-30.-->
-		<div class="mod-footer-wrap clr">
-			<div class="mod-footer">
-				<div class="nav"><a href="http://www.wanshar.com/article/1812/view" target="_blank" class="nav-item">关于玩啥</a><a href="http://www.lagou.com/gongsi/9249.html" target="_blank" class="nav-item">加入玩啥</a><a href="http://www.wanshar.com/article/1813/view" target="_blank"
-					class="nav-item">联系我们</a><a href="http://weibo.com/wanshar" target="_blank" class="weibo-item"><em class="licon-weibo"></em><span>官方微博</span></a>
-				</div>
-				<p class="banquan">版权所有 本站内容未经书面许可，禁止一切形式的转载</p>
-				<p>@ copyright 2015 玩啥 All rights reserved. 粤ICP备140650626号-2</p>
-			</div>
-			<div class="weixin-wrap">
-				<img src="picture\84_weixin.jpg" class="weixin">
-				<img src="picture\85_sao.png">
-			</div>
-		</div>
-		<script src="../assets/js/wansha/15_libs.min.js"></script>
-		<script src="../assets/js/wansha/16_module.common.js"></script>
-		<script src="../assets/js/wansha/17_module.dialog.js"></script>
-		<script src="../assets/js/wansha/18_module.ask.js"></script>
-		<script src="../assets/js/wansha/19_module.layout.js"></script>
-		<script src="../assets/js/wansha/20_module.smallnote.js"></script>
-		<script src="../assets/js/wansha/21_jquery.placeholder.js"></script>
-		<div style="display:none;">
-			<script src="http://s95.cnzz.com/z_stat.php?id=1254443849&amp;web_id=1254443849" language="JavaScript"></script>
-		</div>
+		
 		<script>
 			window.pageConfig = {
 				isMobile: false,
@@ -1066,10 +938,5 @@ span &nbsp;发表-->
 				me: null || {}
 			}
 		</script>
-		<script src="../assets/js/wansha/22_touch.js"></script>
-		<script src="../assets/js/wansha/23_umeditor.config.js"></script>
-		<script src="../assets/js/wansha/24_umeditor.min.js"></script>
-		<script src="../assets/js/wansha/23_module.slide.js"></script>
-	</body>
-
-</html>
+{% endblock %}
+		
