@@ -43,7 +43,7 @@ module.exports.routes = {
   * for configuration options and examples.                                  *
   *                                                                          *
   ***************************************************************************/
-	'get /test/file': {view: 'test/file'},
+  /*'get /test/file': {view: 'test/file'},*/
 
 	'post /file/upload': {
 		controller: 'ProductController',
@@ -64,7 +64,9 @@ module.exports.routes = {
   
   'get /allProducts': {view: 'allProducts'},
   'get /play': {view: 'play'},
-  'get /try': {view: 'try'}
+  'get /diy': {view: 'diy'},
+  'get /news': {view: 'news'},
+  'get /videos': {view: 'videos'}
 
 
 

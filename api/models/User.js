@@ -14,6 +14,10 @@ var User = {
       unique: true,
       size: 24
     },
+    img: {
+      type: 'string',
+      size: 100
+    },
     password: {
       type: 'string',
       size: 100

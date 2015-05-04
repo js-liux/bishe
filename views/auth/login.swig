@@ -13,7 +13,7 @@
 			<input type="submit" name="" id="" value="登录"/>
 		</form>
   	 </section>
-</section>
+ </section>
 </div>
 <h1>{{=title }}</h1>
 {% endblock %}

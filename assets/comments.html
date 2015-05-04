@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+    #SOHUCS{
+        width:660px !important;
+        margin: 0 auto !important;
+    }</style>
+</head>
+<body>
+    <!--兼容版，可保证页面完全兼容-->
+    <div id="SOHUCS"></div>
+     <script>
+      (function(){
+        var appid = 'cyrKR237r',
+        conf = 'prod_c4a78da47621fa2e1513b6f95a7ce8fb';
+        var doc = document,
+        s = doc.createElement('script'),
+        h = doc.getElementsByTagName('head')[0] || doc.head || doc.documentElement;
+        s.type = 'text/javascript';
+        s.charset = 'utf-8';
+        s.src =  'http://assets.changyan.sohu.com/upload/changyan.js?conf='+ conf +'&appid=' + appid;
+        h.insertBefore(s,h.firstChild);
+      })()
+    </script>
+    
+</body>
+</html>

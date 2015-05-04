@@ -1,0 +1,143 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!-- <div class="header_btm">
+    <div class="wrap">
+        <div class="header_sub">
+            <div class="h_menu">
+                <ul>
+                    <li>
+                        <img src="images/logo.png" />
+                    </li>
+                    <li><a href="/">首页</a>
+                    </li> |
+                    <li><a href="/allProducts">全部商品</a>
+                    </li> |
+                    <li><a href="/videos">视频</a>
+                    </li> |
+                    <li><a href="/diy">DIY</a>
+                    </li> |
+                    <li><a href="/news">资讯</a>
+                    </li> |
+                    <li><a href="#" data-toggle="modal" data-target="#putProduct">分享产品</a>
+                    </li> |
+                    <input type="text" value="">
+                    <input type="submit" class="btn btn-success" value="搜索"> 
+                    {% if user %}
+                    <div class="dropdown">
+  <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Dropdown trigger
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">用户信息</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">登出</a></li>
+  </ul>
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                            {{user.name}}
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">用户信息</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">登出</a></li>
+                        </ul>
+                    </div>
+                    <li class="user"><a href="/user/{{user.id}}">你好，{{user.name}}</a>
+                   </li>
+                    {% else %}
+                    <li class="login"><a href="#" data-toggle="modal" data-target="#js-modal-login">登录</a>
+                    </li>
+                    {% endif%}
+                    <li><a href="sale.html">创客圈</a></li> |
+                    <li><a href="wallets.html">资讯</a></li> |
+                            <li><a href="sale.html">众筹</a></li> |
+                    <li class="re"><a href="sale.html">注册</a></li>
+                </ul>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">登录</button>
+            </div>
+            <div class="top-nav">
+                <nav class="nav">
+                    <a href="#" id="w3-menu-trigger"> </a>
+                    <ul class="nav-list" style="">
+                        <li class="nav-item"><a href="index.html">首页</a>
+                        </li>
+                        <li class="nav-item"><a href="allProducts.html">全部商品</a>
+                        </li>
+                        <li class="nav-item"><a href="handbags.html">创意</a>></li>
+                        <li class="nav-item"><a href="accessories.html">免费试用</a>
+                        </li>
+                        <li class="nav-item"><a href="sale.html">DIY</a>
+                        </li>
+                        <li class="nav-item"><a href="sale.html">分享产品</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="search_box">
+                    <form>
+                        <input type="text" value="Search" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Search';}">
+                        <input type="submit" value="">
+                    </form>
+                </div>
+                <div class="clear"> </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+ -->

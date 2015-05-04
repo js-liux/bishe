@@ -42,22 +42,37 @@
 		
 
 {% block content %}
-	<div class="container-fluid">
 
+	<div class="container-fluid">
 		<ul class="js-bxslider" >
-				  {% for slider in sliderList %}
-				      <li><a href="product/:{{slider.id}}"><img src="images/qikoo/{{slider.imgUrl}}" title="{{slider.name}}"/></a></li>
-				 {% endfor %}
-			</ul>
-		</div>
+			{% for slider in sliderList %}
+				 <li><a href="product/:{{slider.id}}"><img src="images/qikoo/{{slider.imgUrl}}" title="{{slider.name}}"/></a></li>
+			{% endfor %}
+		</ul>
+	</div>
 				
 		<!----start-cursual---->
 		<div class="wrap">
-			<!----start-img-cursual---->
-								 {% for product in sliderList %}
+			<div class="container products">
+			  <div class="row product">
+					{% for product in productList %}
+					<div class="col-md-4 item">
+					<a href="/product/{{product.id}}">
+						<img src="/images/qikoo/{{product.imgUrl}}" style="width:300px; height:201px;" alt="" />
+						<div class="price">
+							<h4>{{product.name}}</h4>
+						</div>
+					</a>
+					</div>
+					{% endfor %}
+			  </div>
+			</div>
+		</div>
 
+			<!----start-img-cursual---->
+			<!-- {% for product in sliderList %}
 			<div id="owl-demo" class="owl-carousel">
-				<div class="item" onClick="location.href='details.html';">
+				<div class="item">
 					<a href="/product/{{product.id}}">
 						<img class="lazyOwl" src="/images/qikoo/{{product.imgUrl}}"  alt="Lazy Owl Image">
 					</a>
@@ -67,34 +82,21 @@
 				</div>
 				
 			</div>
-								 {% endfor %}
+			{% endfor %} -->
 
 			<!----//End-img-cursual---->
-		</div>
+		
 		<!-- start main1 -->
-		<div class="main_bg1">
+		<<!-- div class="main_bg1">
 			<div class="wrap">
 				<div class="main1">
-					<h2>featured products</h2>
+					<h2>主要商品</h2>
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<!-- start main -->
 
-<div class="container products">
-  <div class="row product">
-		{% for product in productList %}
-		<div class="col-md-4 item">
-		<a href="/product/{{product.id}}">
-			<img src="/images/qikoo/{{product.imgUrl}}" style="width:300px; height:201px;" alt="" />
-			<div class="price">
-				<h4>{{product.name}}</h4>
-			</div>
-		</a>
-		</div>
-		{% endfor %}
-  </div>
-</div>
+		
 </div>
 		
 {% endblock %}

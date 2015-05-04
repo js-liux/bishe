@@ -1,6 +1,8 @@
 {% extends 'layout.html' %}
 {% block content %}
 
+<h1>{{user.name}}</h1>
+
 <div class="container">
 	<h1>TWITTER BOOTSTRAP TUTORIAL</h1>	
 	<div class='navbar navbar-inverse'>
