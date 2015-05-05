@@ -1,9 +1,9 @@
-var Product = {
+var Article = {
 
   // Identity is a unique name for this model and must be in lower case
-  identity: 'Product',
+  identity: 'Article',
   schema: true,
-  tableName: 'product',
+  tableName: 'article',
   // Connection
   // A named connection which will be used to read/write to the datastore
   // Attributes are basic pieces of information about a model
@@ -14,30 +14,18 @@ var Product = {
       size: 24,
       required: true
     },
-    img: {
-      type: 'string',
-      size: 200
-    },
-    desc: {
-      type: 'string',
-      size: 500
-    },
     praise: {
       type: 'integer'
-    },
-    price: {
-      type: 'float'
     },
     url: {
       type: 'string',
       size: 50
     },
-    buy: {
-      type: 'string',
-      size: 50
-    },
     content: {
       type: 'text'
+    },
+    state: {
+      type: 'boolean'
     },
     owner: {
       model: 'User'
@@ -45,4 +33,4 @@ var Product = {
   }
 };
 
-module.exports = Product;
+module.exports = Article;

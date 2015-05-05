@@ -45,7 +45,6 @@ module.exports = {
 				if (password === data[0].password) {
 					req.session.user = data[0];
 					res.locals.user = data[0];
-					console.log('session:', req.session);
 					req.session.authenticated = true;
 					return res.view('/');
 				}

@@ -23,51 +23,74 @@
 module.exports.routes = {
 
   /***************************************************************************
-  *                                                                          *
-  * Make the view located at `views/homepage.ejs` (or `views/homepage.jade`, *
-  * etc. depending on your default view engine) your home page.              *
-  *                                                                          *
-  * (Alternatively, remove this and add an `index.html` file in your         *
-  * `assets` directory)                                                      *
-  *                                                                          *
-  ***************************************************************************/
+   *                                                                          *
+   * Make the view located at `views/homepage.ejs` (or `views/homepage.jade`, *
+   * etc. depending on your default view engine) your home page.              *
+   *                                                                          *
+   * (Alternatively, remove this and add an `index.html` file in your         *
+   * `assets` directory)                                                      *
+   *                                                                          *
+   ***************************************************************************/
 
   '/': 'IndexPageController.bower',
- 
+
   /***************************************************************************
-  *                                                                          *
-  * Custom routes here...                                                    *
-  *                                                                          *
-  *  If a request to a URL doesn't match any of the custom routes above, it  *
-  * is matched against Sails route blueprints. See `config/blueprints.js`    *
-  * for configuration options and examples.                                  *
-  *                                                                          *
-  ***************************************************************************/
+   *                                                                          *
+   * Custom routes here...                                                    *
+   *                                                                          *
+   *  If a request to a URL doesn't match any of the custom routes above, it  *
+   * is matched against Sails route blueprints. See `config/blueprints.js`    *
+   * for configuration options and examples.                                  *
+   *                                                                          *
+   ***************************************************************************/
   /*'get /test/file': {view: 'test/file'},*/
 
-	'post /file/upload': {
-		controller: 'ProductController',
-		action: 'upload',
-		cors: {
-			origin: '*'
-		}
-	},
-	'get /login': 'AuthController.loginPage',
-	'post /login': 'AuthController.login',
+  'post /file/upload': {
+    controller: 'ProductController',
+    action: 'upload',
+    cors: {
+      origin: '*'
+    }
+  },
+  'get /login': 'AuthController.login',
+  'post /login': 'AuthController.login',
 
-	'get /logout': 'AuthController.logout',
-	
-	'get /product/:id': 'ProductController.bower',
-	
-	
-	'get /user/:id': 'UserController.bower',
-  
-  'get /allProducts': {view: 'allProducts'},
-  'get /play': {view: 'play'},
-  'get /diy': {view: 'diy'},
-  'get /news': {view: 'news'},
-  'get /videos': {view: 'videos'}
+  'get /logout': 'AuthController.logout',
 
+  'get /product/:id': 'ProductController.bower',
+
+  'get /user/:id': 'UserController.bower',
+
+  'get /user/userInfo': {
+    view: 'user/userInfo'
+  },
+
+  'get /allProducts': {
+    view: 'allProducts'
+  },
+  'get /play': {
+    view: 'play'
+  },
+  'get /diy': {
+    view: 'diy'
+  },
+  'get /news': {
+    view: 'news'
+  },
+  'get /videos': {
+    view: 'videos'
+  },
+  'post /user/updata': 'UserController.updata',
+
+  'get /article/:id': 'ArticleController.detail',
+
+  'get /news': 'ArticleController.newsList',
+
+  'get /user/article': 'ArticleController.bower',
+
+  'post /user/article': 'ArticleController.bower',
+
+  'get /user/question': 'QueationController.bower'
 
 
 };

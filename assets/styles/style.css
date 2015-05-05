@@ -62,7 +62,7 @@ body {
 	-moz-border-radius: 2px;
 	-o-border-radius: 2px;
 }
-.h_search input[type="text"]{
+/* .h_search input[type="text"]{
 	-webkit-appearance: none;
 	padding: 6px 16px;
 	outline: none;
@@ -89,7 +89,7 @@ body {
 }
 .h_search input[type="submit"]:hover {
 	background: url('../images/search_h.png') no-repeat 10px 5px;
-}
+} */
 /*------start-top-nav------*/
 .top-nav {
 	display:none;
@@ -225,19 +225,19 @@ body {
 }
 .copyrights{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
 /* start menu */
-.h_menu{
+.mh_menu{
 	font-family: 'bebas_neueregular';
 	float:left;
 	color:#ffffff;
 	font-size: 1em;
 }
-.h_menu ul li{
+.mh_menu > ul > li{
 	display: inline-block;
 }
-.h_menu ul li:first-child a{
+.mh_menu > ul > li:first-child a{
 	padding-left: 0px;
 }
-.h_menu ul li a{
+.mh_menu > ul > li > a{
 	display: block;
 	padding: 14px 18px;
 	font-size: 1.2em;
@@ -248,10 +248,10 @@ body {
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
-.h_menu ul li a:hover{
+.mh_menu > ul > li > a:hover{
 	color:#f0f0f0;
 }
-.h_menu ul li.active a{
+.mh_menu > ul > li .active a{
 	color:#f0f0f0;
 }
 /* start icon styles */

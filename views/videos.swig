@@ -1,12 +1,13 @@
 {% extends 'layout.html' %}
 {% block content %}
+	
 	<div class="container">
 		<div class="row">
 		  <div class="col-md-4">
 		  	<div class="post-16584 post type-post status-publish format-standard has-post-thumbnail hentry category-viewpoint tag-3468 tag-3467 st-category-wrapper news-list" id="post-16584">
 		        <div class="post-thumbnail hover-thumb">
 		            <span class="had-thumb">
-								<a href="http://www.mongcz.com/archives/16584" title="Permalink to 脑机界面的发展之路：用意念控制机械臂不是梦" rel="bookmark"><img alt="" src="http://www.mongcz.com/wp-content/uploads/2014/12/0019-500x312.jpg"></a>                           		
+								<a href="" title="Permalink to 脑机界面的发展之路：用意念控制机械臂不是梦" rel="bookmark"><img alt="" src="http://www.mongcz.com/wp-content/uploads/2014/12/0019-500x312.jpg"></a>                           		
 		            </span>  
 		            <div class="clear"></div>
 		        </div>

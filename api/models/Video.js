@@ -1,9 +1,9 @@
-var Product = {
+var Video = {
 
   // Identity is a unique name for this model and must be in lower case
-  identity: 'Product',
+  identity: 'Video',
   schema: true,
-  tableName: 'product',
+  tableName: 'video',
   // Connection
   // A named connection which will be used to read/write to the datastore
   // Attributes are basic pieces of information about a model
@@ -11,28 +11,10 @@ var Product = {
     name: {
       type: 'string',
       unique: true,
-      size: 24,
+      size: 50,
       required: true
     },
-    img: {
-      type: 'string',
-      size: 200
-    },
-    desc: {
-      type: 'string',
-      size: 500
-    },
-    praise: {
-      type: 'integer'
-    },
-    price: {
-      type: 'float'
-    },
-    url: {
-      type: 'string',
-      size: 50
-    },
-    buy: {
+    imgUrl: {
       type: 'string',
       size: 50
     },
@@ -45,4 +27,4 @@ var Product = {
   }
 };
 
-module.exports = Product;
+module.exports = Video;

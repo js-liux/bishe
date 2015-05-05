@@ -14,6 +14,7 @@
   ],
   "dependencies": {
     "bootstrap": "~3.3.4",
-    "bxslider-4": "~4.2.3"
+    "bxslider-4": "~4.2.3",
+    "jquery": "1.9.1"
   }
 }

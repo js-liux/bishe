@@ -20,6 +20,12 @@ module.exports = {
 			res.view('product');
 		});
 	},
+	/**
+	 * 文件上传
+	 * @param  {[type]} req [description]
+	 * @param  {[type]} res [description]
+	 * @return {[type]}     [description]
+	 */
 	upload: function(req, res) {
 		req.file('file').upload({
 			// don't allow the total upload size to exceed ~10MB
