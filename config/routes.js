@@ -53,17 +53,12 @@ module.exports.routes = {
     }
   },
   'get /login': 'AuthController.login',
+
   'post /login': 'AuthController.login',
 
   'get /logout': 'AuthController.logout',
 
   'get /product/:id': 'ProductController.bower',
-
-  'get /user/:id': 'UserController.bower',
-
-  'get /user/userInfo': {
-    view: 'user/userInfo'
-  },
 
   'get /allProducts': {
     view: 'allProducts'
@@ -71,26 +66,21 @@ module.exports.routes = {
   'get /play': {
     view: 'play'
   },
-  'get /diy': {
-    view: 'diy'
-  },
-  'get /news': {
-    view: 'news'
-  },
   'get /videos': {
     view: 'videos'
   },
-  'post /user/updata': 'UserController.updata',
-
-  'get /article/:id': 'ArticleController.detail',
+  'post /user/change': 'UserController.change',
 
   'get /news': 'ArticleController.newsList',
 
-  'get /user/article': 'ArticleController.bower',
+  'get /user/art': 'ArticleController.show',
 
-  'post /user/article': 'ArticleController.bower',
+  'get /user/question': 'QuestionController.show',
 
-  'get /user/question': 'QueationController.bower'
+  'get /user/userInfo': 'UserController.show',
 
+  'get /article/:id': 'ArticleController.detail',
+
+  'get /user/:id': 'UserController.show',
 
 };

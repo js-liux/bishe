@@ -7,7 +7,7 @@
 		<div class="nav-wrap">
 			<ul class="nav nav-pills nav-stacked">
 				<li role="presentation" ><a href="/user/userInfo">修改用户信息</a></li>
-				<li role="presentation" class="active"><a href="/user/article">我的文章</a></li>
+				<li role="presentation" class="active"><a href="/user/art">我的文章</a></li>
 				<li role="presentation"><a href="/user/question">我的问题</a></li>
 				<!-- <li role="presentation"><a href="/user/collection">我的收藏</a></li> -->
 			</ul>
@@ -49,14 +49,12 @@
 								<span>2小时前</span>
 							</td>
 						</tr>
+						{% endfor %}
 					</tbody>
 				</table>
 			</div>
 
 		</div>	
 	</div>
-
-
-
 
 {% endblock %}

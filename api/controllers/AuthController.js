@@ -43,6 +43,7 @@ module.exports = {
 				});
 			} else { //有该用户，实现密码的匹配
 				if (password === data[0].password) {
+					console.log("login data" + data[0]);
 					req.session.user = data[0];
 					res.locals.user = data[0];
 					req.session.authenticated = true;

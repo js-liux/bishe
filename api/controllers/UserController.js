@@ -4,7 +4,7 @@ module.exports = {
 	 * @param {Object} req
 	 * @param {Object} res
 	 */
-	bower: function(req, res) {
+	show: function(req, res) {
 		var userID = req.param('id');
 		User.find().where({
 			id: userID
@@ -19,7 +19,7 @@ module.exports = {
 		});
 	},
 
-	updata: function(req, res) {
+	change: function(req, res) {
 		console.log("updata");
 		var userID = req.param('id');
 		var name = req.body.name,
@@ -41,7 +41,7 @@ module.exports = {
 		User.find().where({
 			id: userID
 		}).then(function(users) {
-			User.updata(users, newUser, function(userss) {
+			User.update(users, newUser, function(userss) {
 				var user;
 				if (userss.length > 0) {
 					user = userss[0];

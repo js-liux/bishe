@@ -7,7 +7,7 @@
 		<div class="nav-wrap">
 			<ul class="nav nav-pills nav-stacked">
 				<li role="presentation"><a href="/user/userInfo">修改用户信息</a></li>
-				<li role="presentation"><a href="/user/article">我的文章</a></li>
+				<li role="presentation"><a href="/user/art">我的文章</a></li>
 				<li role="presentation" class="active"><a href="/user/question">我的问题</a></li>
 				<!-- <li role="presentation"><a href="/user/collection">我的收藏</a></li> -->
 			</ul>
@@ -40,6 +40,7 @@
 								<a href="" target="_blank">删除</a>
 							</td>
 						</tr>
+					{% endfor %}
 					</tbody>
 				</table>
 			</div>

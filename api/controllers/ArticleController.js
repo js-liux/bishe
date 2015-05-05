@@ -6,7 +6,7 @@ module.exports = {
 	 * @param  {[type]} res [description]
 	 * @return {[type]}     [description]
 	 */
-	bower: function(req, res) {
+	show: function(req, res) {
 		var user = req.session.user;
 		console.log("articleController user" + user);
 		var userId = user.id;

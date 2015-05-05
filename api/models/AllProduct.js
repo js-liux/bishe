@@ -12,7 +12,7 @@ var AllProduct = {
     name: {
       type: 'string',
       unique: true,
-      size: 24,
+      size: 100,
       required: true
     },
     imgUrl: {

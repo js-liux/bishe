@@ -1,34 +1,27 @@
 module.exports = {
-	bower: function(req, res) {
+	show: function(req, res) {
 		var user = req.session.user;
 		var userId = user.id;
-		console.log("questionController bower " + userId);
 		Question.find().where({
 			owner: userId
 		}).then(function(questions) {
+			var arr = new Array(),
+				answers;
 			for (var i = 0; i < questions.length; i++) {
-				Answer.find().where({
-					owner: questions[i].id
-				}).then(function(answers) {
-					questions.answers = answers;
-					//res.locals.answers = answers;
-					res.locals.questions = questions;
-					res.view('user/question');
-
-				});
-
+				arr[i] = questions[i].id;
 			};
+			console.log('arr' + arr);
+			Answer.find().where({
+				owner: arr
+			}).then(function(answers) {
+				answers = answers;
+				res.locals.questions = questions;
+				res.locals.answers = answers;
+				res.view('user/question');
+			});
 
-		});
 
-		Product.find({
-			owner: 1
-		}).then(function(data) {
-			var result = {
-				user: user,
-				products: data
-			};
-			res.view('homepage', result);
+
 		});
 	}
 }

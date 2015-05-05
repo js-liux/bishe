@@ -52,4 +52,14 @@ module.exports.policies = {
   /*IndexPageController: {
     bower: 'sessionAuth'
   }*/
+  ArticleController: {
+    show: 'sessionAuth'
+  },
+  QuestionController: {
+    show: 'sessionAuth'
+  },
+  UserController: {
+    show: 'sessionAuth'
+  }
+
 };
