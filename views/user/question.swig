@@ -6,10 +6,10 @@
 	
 		<div class="nav-wrap">
 			<ul class="nav nav-pills nav-stacked">
-				<li role="presentation"><a href="/user/userInfo">修改用户信息</a></li>
-				<li role="presentation"><a href="/user/art">我的文章</a></li>
-				<li role="presentation" class="active"><a href="/user/question">我的问题</a></li>
-				<!-- <li role="presentation"><a href="/user/collection">我的收藏</a></li> -->
+				<li role="presentation" ><a href="/user/userInfo">修改用户信息</a></li>
+				<li role="presentation" class="active"><a href="/user/art">我的文章</a></li>
+				<li role="presentation"><a href="/user/question">我的问题</a></li>
+				<li role="presentation"><a href="/user/shareProduct">我分享的产品</a></li>
 			</ul>
 		</div>
 			
@@ -47,8 +47,4 @@
 
 		</div>	
 	</div>
-
-
-
-
 {% endblock %}

@@ -35,6 +35,7 @@ module.exports = {
 			User.find().where({
 				id: userId
 			}).then(function(user) {
+				res.locals.sessionUser = req.session.user;
 				res.locals.article = article[0];
 				res.locals.user = user[0];
 				res.view('article/articleDetail');
@@ -60,14 +61,13 @@ module.exports = {
 				id: userId
 			}).then(function(user) {
 				console.log("userid" + user[0].id);
-				//res.locals.articles = articles;
-				var lengthaa = articles.length / 3;
 				var data = {
 					articles: articles
 				}
 				console.log("articles" + articles);
 				//res.locals.articleNum = 3; /*Math.floor(articles.length / 3)*/
 				res.locals.user = user[0];
+				res.locals.sessionUser = req.session.user;
 				res.view('news', data);
 			});
 		});

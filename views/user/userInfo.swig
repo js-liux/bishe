@@ -1,14 +1,14 @@
 {% extends '../layout.html' %}
 {% block title %}用户中心{% endblock %}
 {% block content %}
-	<div class="container u-container">	
+	<div class="container u-container">
 	
 		<div class="nav-wrap">
 			<ul class="nav nav-pills nav-stacked">
-				<li role="presentation" class="active"><a href="/user/userInfo">修改用户信息</a></li>
+				<li role="presentation"  class="active"><a href="/user/userInfo">修改用户信息</a></li>
 				<li role="presentation"><a href="/user/art">我的文章</a></li>
 				<li role="presentation"><a href="/user/question">我的问题</a></li>
-				<li role="presentation"><a href="/user/collection">我的收藏</a></li>
+				<li role="presentation"><a href="/user/shareProduct">我分享的产品</a></li>
 			</ul>
 		</div>
 			
@@ -21,19 +21,20 @@
 			{% if user %}
 			<div class="avatar-wrap">
 				<img src="/images/user/{{user.img}}" class="avatar-img"><br>
-				<button type="button" class="avatar-btn btn btn-primary">修改头像</button>
+				<button type="button" class="avatar-btn btn btn-avatar">修改头像</button>
 			</div>
 			<form method="post" action="/user/change" class="info-form form-horizontal">
 				<input type="hidden" name="id" value="28583">
 				<input type="hidden" name="pkType" value="userId">
 				<div class="form-group">
-					<label for="email" class="col-sm-2 control-label">邮箱：</label>
-					<div class="mt5 col-sm-10"><span>{{user.email}}</span></div>
+					<label for="username" class="col-sm-2 control-label">用户名：</label>
+					<div class="mt5 col-sm-10"><span>{{user.name}}</span></div>
 				</div>
 				<div class="form-group">
-					<label for="username" class="col-sm-2 control-label">用户名：</label>
+					<label for="username" class="col-sm-2 control-label">邮箱：</label>
 					<div class="col-sm-10">
-						<input id="username" name="name" type="text" placeholder="昵称 (允许中英文、数字、下划线，长度2-16字符）" value="{{user.name}}" class="form-control">
+						<span>{{user.email}}</span>
+						<!-- <input id="username" name="name" type="text" placeholder="昵称 (允许中英文、数字、下划线，长度2-16字符）" value="{{user.name}}" class="form-control"> -->
 					</div>
 				</div>
 				<div class="form-group">
@@ -42,27 +43,35 @@
 						<input id="mobileNum" name="telephone" type="text" placeholder="{{user.telephone}}" value="" class="form-control">
 					</div>
 				</div>
-				<div class="form-group">
+				<!-- <div class="form-group">
 					<label for="gender" class="col-sm-2 control-label">性别：</label>
 					<div class="mt5 col-sm-10">
 						<label class="mr20">
+							{% if user.sex %}
+							<input name="gender" type="radio" value="男" checked="checked">
+							{% else %}
 							<input name="gender" type="radio" value="男">
+							{% endif %}
 							<span>&nbsp;&nbsp;男</span>
 						</label>
 						<label>
+							{% if user.sex %}
 							<input name="gender" type="radio" value="女">
+							{% else %}
+							<input name="gender" type="radio" value="女"  checked="checked">
+							{% endif %}
 							<span>&nbsp;&nbsp;女</span>
 						</label>
 					</div>
-				</div>
-				<div class="form-group">
+				</div> -->
+				<!-- <div class="form-group">
 					<label for="introduction" class="col-sm-2 control-label">简介：</label>
 					<div class="col-sm-10">
 						<textarea id="introduction" name="abstract" type="text" placeholder="{{user.abstract}}" class="form-control">
 							
 						</textarea>
 					</div>
-				</div>
+				</div> -->
 				<div class="form-group">
 					<label for="weiboUrl" class="col-sm-2 control-label">微博地址：</label>
 					<div class="col-sm-10">
@@ -78,7 +87,7 @@
 				<div role="alert" class="alert alert-danger"></div>
 				<div class="form-group">
 					<div class="col-sm-offset-2 col-sm-10">
-						<button type="submit" class="btn btn-primary">提交</button>
+						<button type="submit" class="btn main-search">保存</button>
 					</div>
 				</div>
 			</form>
@@ -143,7 +152,7 @@
 				<div role="alert" class="alert alert-danger"></div>
 				<div class="form-group">
 					<div class="col-sm-offset-2 col-sm-10">
-						<button type="submit" class="btn btn-primary">提交</button>
+						<button type="submit" class="btn mian-search">保存</button>
 					</div>
 				</div>
 			</form>

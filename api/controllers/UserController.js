@@ -5,8 +5,8 @@ module.exports = {
 	 * @param {Object} res
 	 */
 	show: function(req, res) {
-		var userID = req.param('id');
-		User.find().where({
+		/*var userID = req.param('id');*/
+		/*User.find().where({
 			id: userID
 		}).then(function(users) {
 			var user;
@@ -16,42 +16,36 @@ module.exports = {
 			res.view('user/userInfo', {
 				user: user
 			})
-		});
+		});*/
+		res.locals.sessionUser = req.session.user;
+		var user = req.session.user;
+		res.view('user/userInfo', {
+			user: user
+		})
 	},
 
 	change: function(req, res) {
-		console.log("updata");
-		var userID = req.param('id');
-		var name = req.body.name,
-			email = req.body.email,
-			telephone = req.body.telephone,
-			/*sex = req.body.sex,*/
-			abstract = req.body.abstract,
-			weiboAddress = req.body.weiboAddress,
-			qqNum = req.body.qqNum;
+		var user = req.session.user;
+		var telephone = parseInt(req.body.telephone) || user.telephone,
+			weiboAddress = req.body.weiboAddress || user.weiboAddress,
+			qqNum = parseInt(req.body.qqNum) || user.qqNum;
 		var newUser = {
-			name: name,
-			email: email,
 			telephone: telephone,
-			/*sex: sex,*/
-			abstract: abstract,
 			weiboAddress: weiboAddress,
 			qqNum: qqNum
-		}
-		User.find().where({
-			id: userID
-		}).then(function(users) {
-			User.update(users, newUser, function(userss) {
-				var user;
-				if (userss.length > 0) {
-					user = userss[0];
-				}
-				res.view('user/userInfo', {
-					user: user
-				})
-			})
+		};
+		User.update(user, {
+			telephone: telephone,
+			weiboAddress: weiboAddress,
+			qqNum: qqNum
+		}, function(err) {
+			console.log("err" + err);
+			if (err) return res.negotiate(err);
+			return res.ok();
+		}).
+		catch (function(err) {
+			sails.log.error(err);
 		});
 
 	}
-
 }

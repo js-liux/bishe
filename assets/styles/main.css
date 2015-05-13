@@ -240,8 +240,22 @@ margin-left: 20px;
 }
 .u-container{
     margin-top: 1rem;
+    height:800px;
 }
 .logo{
     width: 4rem;
     height: 4rem;
+}
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+color: #fff;
+background-color: #4ccfce;
+}
+.active{
+    background-color: #4ccfce;
+}
+.btn-avatar{
+    background-color: #4ccfce;
+}
+.main-search{
+    background-color: #4ccfce;
 }

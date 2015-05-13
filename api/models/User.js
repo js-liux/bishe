@@ -24,8 +24,7 @@ var User = {
       size: 50
     },
     sex: {
-      type: 'string',
-      size: 10
+      type: 'boolean',
     },
     abstract: {
       type: 'string',
@@ -41,7 +40,8 @@ var User = {
     },
     img: {
       type: 'string',
-      size: 100
+      size: 100,
+      defaultsTo: 'xjs.jpg'
     },
     password: {
       type: 'string',
@@ -51,7 +51,7 @@ var User = {
       type: 'integer'
     },
     products: {
-      collection: 'Product',
+      collection: 'AllProduct',
       via: 'owner'
     },
     quetions: {

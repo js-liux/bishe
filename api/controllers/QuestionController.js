@@ -15,6 +15,7 @@ module.exports = {
 				owner: arr
 			}).then(function(answers) {
 				answers = answers;
+				res.locals.sessionUser = req.session.user;
 				res.locals.questions = questions;
 				res.locals.answers = answers;
 				res.view('user/question');

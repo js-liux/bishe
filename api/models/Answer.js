@@ -12,8 +12,12 @@ var Answer = {
       type: 'text'
     },
     owner: {
+      model: 'User'
+    },
+    ownerQuestion: {
       model: 'Question'
     }
+
   }
 };
 

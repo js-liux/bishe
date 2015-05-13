@@ -1,5 +1,5 @@
 {% extends '../layout.html' %}
-{% block title %}我的文章{% endblock %}
+{% block title %}我分享的产品{% endblock %}
 {% block content %}
 
 	<div class="container u-container">	
@@ -7,9 +7,9 @@
 		<div class="nav-wrap">
 			<ul class="nav nav-pills nav-stacked">
 				<li role="presentation" ><a href="/user/userInfo">修改用户信息</a></li>
-				<li role="presentation" class="active"><a href="/user/art">我的文章</a></li>
+				<li role="presentation"><a href="/user/art">我的文章</a></li>
 				<li role="presentation"><a href="/user/question">我的问题</a></li>
-				<li role="presentation"><a href="/user/shareProduct">我分享的产品</a></li>
+				<li role="presentation" class="active"><a href="/user/shareProduct">我分享的产品</a></li>
 			</ul>
 		</div>
 			
@@ -18,8 +18,8 @@
 				<table class="table table-hover">
 					<thead>
 						<tr>
-							<th>文章标题</th>
-							<th>状态</th>
+							<th>产品名称</th>
+							<th>产品内容</th>
 							<th>动作</th>
 							<th>编辑时间</th>
 						</tr>
@@ -28,17 +28,14 @@
 						
 					</tbody> -->
 					<tbody>
-					{% for article in articles %}
+					{% for product in products %}
 						<tr data-id="8a2bff934d063378014d2043c8fa0081">
 							<td>
-								<a href="/article/{{article.id}}" target="_blank">{{article.name}}</a>
+								<a href="/article/{{article.id}}" target="_blank">{{product.name}}</a>
 							</td>
 							<td>
-								{% if article.state %}
-								<span>已发布</span>
-								{% else %}
-								<span>未发布</span>
-								{% endif %}
+								{{product.content}}
+								
 							</td>
 							<td>
 								<a href="/article/{{article.id}}" target="_blank">查看</a>

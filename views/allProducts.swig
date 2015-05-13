@@ -17,47 +17,66 @@
 			<div class="tab-content">
 			    <div role="tabpanel" class="tab-pane active" id="wear">
 			    	{% for wear in wears %}
-			    		<div class="row">
-							<div class="col-md-4">
-							  	<div class="post-16584 post type-post status-publish format-standard has-post-thumbnail hentry category-viewpoint tag-3468 tag-3467 st-category-wrapper news-list" id="post-16584">
-							        <div class="post-thumbnail hover-thumb">
-							            <span class="had-thumb">
-													<a href="" title="" rel="bookmark">
-														<img alt="" src="">
-													</a>                           		
-							            </span>  
-							            <div class="clear"></div>
-							        </div>
-					        
-							        <div class="post-content">
-							            <h2 class="post-title">
-							            	<a title="" rel="bookmark" href="">{{wear.name}}</a>
-							            </h2> 
-							        </div>
-						    		<div class="clear"></div>   
+			    		<div class="col-md-4 item">
+							<a href="/product/{{wear.id}}">
+								<img src="/images/all/{{wear.imgUrl}}" alt="{{wear.name}}" style="width:300px; height:285px;" alt="" />
+								<div class="price">
+									<h4>{{wear.name}}</h4>
 								</div>
-						  	</div>
+							</a>
 						</div>
 			    	{% endfor %}
 			    </div>
 
-			    <div role="tabpanel" class="tab-pane" id="home">家居
+			    <div role="tabpanel" class="tab-pane" id="home">
 					{% for home in homes %}
+						<div class="col-md-4 item">
+							<a href="/product/{{home.id}}">
+								<img src="/images/all/{{home.imgUrl}}" alt="{{home.name}}" style="width:300px; height:285px;" alt="" />
+								<div class="price">
+									<h4>{{home.name}}</h4>
+								</div>
+							</a>
+						</div>
 			    	{% endfor %}
 			    </div>
 
-			    <div role="tabpanel" class="tab-pane" id="sport">运动
+			    <div role="tabpanel" class="tab-pane" id="sport">
 			    	{% for sport in sports %}
+			    		<div class="col-md-4 item">
+							<a href="/product/{{sport.id}}">
+								<img src="/images/all/{{sport.imgUrl}}" alt="{{sport.name}}" style="width:300px; height:285px;" alt="" />
+								<div class="price">
+									<h4>{{sport.name}}</h4>
+								</div>
+							</a>
+						</div>
 			    	{% endfor %}
 			    </div>
 
-			    <div role="tabpanel" class="tab-pane" id="tour">出行
+			    <div role="tabpanel" class="tab-pane" id="tour">
 			    	{% for tour in tours %}
+			    		<div class="col-md-4 item">
+							<a href="/product/{{tour.id}}">
+								<img src="/images/all/{{tour.imgUrl}}" alt="{{tour.name}}" style="width:300px; height:285px;" />
+								<div class="price">
+									<h4>{{tour.name}}</h4>
+								</div>
+							</a>
+						</div>
 			    	{% endfor %}
 			    </div>
 
-			    <div role="tabpanel" class="tab-pane" id="entertainment">娱乐
+			    <div role="tabpanel" class="tab-pane" id="entertainment">
 			    	{% for entertainment in entertainments %}
+			    		<div class="col-md-4 item">
+							<a href="/product/{{entertainment.id}}">
+								<img src="/images/all/{{entertainment.imgUrl}}" alt="{{entertainment.name}}" style="width:300px; height:285px;" />
+								<div class="price">
+									<h4>{{entertainment.name}}</h4>
+								</div>
+							</a>
+						</div>
 			    	{% endfor %}
 			    </div>
 

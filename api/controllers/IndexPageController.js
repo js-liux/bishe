@@ -5,7 +5,7 @@ module.exports = {
 	 * @param  {[type]} res [description]
 	 * @return {[type]}     [description]
 	 */
-	bower: function(req, res) {
+	show: function(req, res) {
 		//两个模块1.轮播图2.特别的商品(有详细制作图片的商品）	
 		var sliderList;
 		var productList;
@@ -17,6 +17,8 @@ module.exports = {
 				ownerCategory: 2
 			}).then(function(products) {
 				productList = products;
+				res.locals.sessionUser = req.session.user;
+				console.log(req.session.user);
 				var data = {
 					productList: productList,
 					sliderList: sliderList

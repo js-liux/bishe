@@ -12,19 +12,20 @@
                     </li> |
                     <li><a href="/videos">视频</a>
                     </li> |
-                    <li><a href="/diy">DIY</a>
-                    </li> |
+                   <!--  <li><a href="/diy">DIY</a>
+                   </li> | -->
                     <li><a href="/news">资讯</a>
                     </li> |
                     <li><a href="#" data-toggle="modal" data-target="#putProduct">分享产品</a>
                     </li> |
                     <input type="text" value="">
-                    <input type="submit" class="btn btn-success" value="搜索"> {% if user %}
+                    <input type="submit" class="btn main-search" value="搜索"> 
+                    {% if sessionUser %}
                    
                     <div class="userDrop">
                         <div class="dropdown userDrop">
                           <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
-                            {{user.name}}
+                            {{sessionUser.name}}
                             <span class="caret"></span>
                           </button>
                           <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
@@ -34,53 +35,13 @@
                           </ul>
                         </div>
                     </div>
-                    <!-- <div class="dropdown">
-                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
-                            {{user.name}}
-                        <span class="caret"></span>
-                        </button>
-                        <ul id="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                            <li role="presentation"><a class="menu-list" role="menuitem" tabindex="-1" href="/userCenter">用户信息</a></li>
-                            <li role="presentation"><a class="menu-list" role="menuitem" tabindex="-1" href="/userCenter"></a></li>
-                            <li role="presentation"><a class="menu-list" role="menuitem" tabindex="-1" href="/userCenter">Something else here</a></li>
-                            <li role="presentation"><a class="menu-list" role="menuitem" tabindex="-1" href="/userCenter">登出</a></li>
-                        </ul>
-                    </div> -->
+                   
                     {% else %}
                     <li class="login"><a href="#" data-toggle="modal" data-target="#js-modal-login">登录</a>
                     </li>
                     {% endif %}
-                    <!--<li><a href="sale.html">创客圈</a></li> |-->
-                    <!--<li><a href="wallets.html">资讯</a></li> |
-                            <li><a href="sale.html">众筹</a></li> |-->
-                    <!--<li class="re"><a href="sale.html">注册</a></li>-->
+                   
                 </ul>
-                <!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">登录</button>-->
-            </div>
-            <div class="top-nav">
-                <nav class="nav">
-                    <a href="#" id="w3-menu-trigger"> </a>
-                    <ul class="nav-list" style="">
-                        <li class="nav-item"><a href="index.html">首页</a>
-                        </li>
-                        <li class="nav-item"><a href="allProducts.html">全部商品</a>
-                        </li>
-                        <li class="nav-item"><a href="handbags.html">创意</a>></li>
-                        <li class="nav-item"><a href="accessories.html">免费试用</a>
-                        </li>
-                        <li class="nav-item"><a href="sale.html">DIY</a>
-                        </li>
-                        <li class="nav-item"><a href="sale.html">分享产品</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="search_box">
-                    <form>
-                        <input type="text" value="Search" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Search';}">
-                        <input type="submit" value="">
-                    </form>
-                </div>
-                <div class="clear"> </div>
             </div>
             <div class="clear"></div>
         </div>

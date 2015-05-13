@@ -17,7 +17,10 @@ var Article = {
     praise: {
       type: 'integer'
     },
-    url: {
+    intro: {
+      type: 'text'
+    },
+    imgUrl: {
       type: 'string',
       size: 50
     },

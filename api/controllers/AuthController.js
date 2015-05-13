@@ -1,7 +1,7 @@
 module.exports = {
 	loginPage: function(req, res) {
 		var loginErrMessage = "请重新登录";
-		res.view('/', loginErrMessage);
+		res.view('index', loginErrMessage);
 		// res.json({
 		//	a: 'a'
 		//});
@@ -9,7 +9,7 @@ module.exports = {
 	logout: function(req, res) {
 		req.session.user = null;
 		req.session.authenticated = false;
-		res.redirect('/');
+		res.redirect('index');
 	},
 
 	/**
@@ -35,23 +35,40 @@ module.exports = {
 						req.session.user = _user;
 						req.session.authenticated = true;
 						res.locals.user = _user;
-						return res.view('/');
+						return res.view('index');
 					}
 					//创建用户失败，显示重新登录
 					var loginErrMessage = "请重新登录";
-					res.view('/', loginErrMessage);
+					res.view('index', loginErrMessage);
 				});
 			} else { //有该用户，实现密码的匹配
 				if (password === data[0].password) {
 					console.log("login data" + data[0]);
 					req.session.user = data[0];
-					res.locals.user = data[0];
 					req.session.authenticated = true;
-					return res.view('/');
+
+					var sliderList;
+					var productList;
+					AllProduct.find().where({
+						ownerCategory: 1
+					}).then(function(sliders) {
+						sliderList = sliders;
+						AllProduct.find().where({
+							ownerCategory: 2
+						}).then(function(products) {
+							productList = products;
+							res.locals.sessionUser = req.session.user;
+							res.locals.user = data[0];
+							res.locals.productList = productList;
+							res.locals.sliderList = sliderList;
+							return res.view('index');
+						});
+					});
+					return;
 				}
 
 				var loginErrMessage = "请重新登录";
-				res.view('/', loginErrMessage);
+				res.view('index', loginErrMessage);
 			}
 		}).
 		catch (function(err) {

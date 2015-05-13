@@ -32,7 +32,7 @@ module.exports.routes = {
    *                                                                          *
    ***************************************************************************/
 
-  '/': 'IndexPageController.bower',
+  '/': 'IndexPageController.show',
 
   /***************************************************************************
    *                                                                          *
@@ -43,7 +43,10 @@ module.exports.routes = {
    * for configuration options and examples.                                  *
    *                                                                          *
    ***************************************************************************/
-  /*'get /test/file': {view: 'test/file'},*/
+  'get /test/file': {
+    view: 'test/file'
+  },
+
 
   'post /file/upload': {
     controller: 'ProductController',
@@ -52,23 +55,19 @@ module.exports.routes = {
       origin: '*'
     }
   },
+  'post /product/shareProduct': 'ProductController.shareProduct',
   'get /login': 'AuthController.login',
 
   'post /login': 'AuthController.login',
 
   'get /logout': 'AuthController.logout',
 
-  'get /product/:id': 'ProductController.bower',
+  'get /allProducts': 'ProductController.productList',
 
-  'get /allProducts': {
-    view: 'allProducts'
-  },
   'get /play': {
     view: 'play'
   },
-  'get /videos': {
-    view: 'videos'
-  },
+
   'post /user/change': 'UserController.change',
 
   'get /news': 'ArticleController.newsList',
@@ -78,6 +77,12 @@ module.exports.routes = {
   'get /user/question': 'QuestionController.show',
 
   'get /user/userInfo': 'UserController.show',
+
+  'get /videos': 'VideoController.show',
+
+  'get /user/shareProduct': 'ProductController.myProduct',
+
+  'get /product/:id': 'ProductController.detail',
 
   'get /article/:id': 'ArticleController.detail',
 
