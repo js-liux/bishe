@@ -27,11 +27,16 @@
 		        <span aria-hidden="true">&laquo;</span>
 		      </a>
 		    </li>
+		   {% if videos  %} 
+
+		    {{for i in videos.length}}
 		    <li><a href="#">1</a></li>
+		    {% endfor %}
 		    <li><a href="#">2</a></li>
 		    <li><a href="#">3</a></li>
 		    <li><a href="#">4</a></li>
-		    <li><a href="#">5</a></li>
+		    <li><a href="#">5</a></li> 
+		    {% endif %}
 		    <li>
 		      <a href="#" aria-label="Next">
 		        <span aria-hidden="true">&raquo;</span>

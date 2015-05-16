@@ -213,7 +213,7 @@ line-height: 24px;
     margin-right: 3rem;
 }
 
- .nav-wrap {
+.nav-wrap {
 width: 200px;
 float: left;
 }
@@ -258,4 +258,8 @@ background-color: #4ccfce;
 }
 .main-search{
     background-color: #4ccfce;
+}
+
+.category-content{
+    margin-top: 1rem;
 }

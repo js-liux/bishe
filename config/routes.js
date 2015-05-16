@@ -48,13 +48,13 @@ module.exports.routes = {
   },
 
 
-  'post /file/upload': {
+  /*'post /file/upload': {
     controller: 'ProductController',
     action: 'upload',
     cors: {
       origin: '*'
     }
-  },
+  },*/
   'post /product/shareProduct': 'ProductController.shareProduct',
   'get /login': 'AuthController.login',
 
@@ -81,6 +81,14 @@ module.exports.routes = {
   'get /videos': 'VideoController.show',
 
   'get /user/shareProduct': 'ProductController.myProduct',
+
+  'get /admin/adminUser': 'AdminController.showUser',
+
+  'get /admin/adminArticle': 'AdminController.showArticle',
+
+  'get /admin/adminProduct': 'AdminController.showProduct',
+
+  'get /admin/adminVideo': 'AdminController.showVideo',
 
   'get /product/:id': 'ProductController.detail',
 

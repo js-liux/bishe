@@ -160,6 +160,9 @@ module.exports = {
 	myProduct: function(req, res) {
 		console.log("myProduct");
 		var user = req.session.user;
+		if (user == undefined || user == '') {
+			return;
+		};
 		res.locals.sessionUser = user;
 		var userId = user.id;
 		AllProduct.find().where({

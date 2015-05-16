@@ -14,7 +14,7 @@
 		  </ul>
 
 		  <!-- Tab panes -->
-			<div class="tab-content">
+			<div class="tab-content category-content">
 			    <div role="tabpanel" class="tab-pane active" id="wear">
 			    	{% for wear in wears %}
 			    		<div class="col-md-4 item">

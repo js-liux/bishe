@@ -55,15 +55,16 @@ module.exports.policies = {
   ArticleController: {
     show: 'sessionAuth'
   },
+
   QuestionController: {
     show: 'sessionAuth'
   },
+
   UserController: {
     show: 'sessionAuth'
-  }
-  /*,
-  AuthController: {
-    login: 'sessionAuth'
-  }*/
+  },
 
+  ProductController: {
+    myProduct: 'sessionAuth'
+  }
 };

@@ -18,13 +18,14 @@
                         <!-- <ul>
                             <li class="uploader_button">+</li>
                         </ul> -->
+                         <input type="file" name="file" id="fileid" onchange="preImg(this.id,'imgid');" multiple="multiple" required="required" accept="image/*" data-event="validate">
                         <div id="preview" style="filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale); width:180px;height:190px;border:solid 1px black;">
-                        <input type="file" name="file" id="fileid" onchange="preImg(this.id,'imgid');" multiple="multiple" required="required" accept="image/*" data-event="validate">
+                       
                         <div id="photo_hidden_group"></div>
                         <!--<form action="/file/upload" method="post" enctype="multipart/form-data">
-	<input type="file" name="file" />
-	<input type="submit" value="提交" />
-</form>-->
+                        	<input type="file" name="file" />
+                        	<input type="submit" value="提交" />
+                        </form>-->
                         <div class="help-block">只能选择一张图片</div>
                     </div>
                     <div class="form-group clearfix">

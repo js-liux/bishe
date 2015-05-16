@@ -43,7 +43,7 @@
 							<td>
 								<a href="/article/{{article.id}}" target="_blank">查看</a>
 								<span>&nbsp;</span>
-								<a href="/article/edit/{{article.id}}" target="_blank">编辑</a>
+								<a href="/article/edit/{{article.id}}" target="_blank">删除</a>
 							</td>
 							<td>
 								<span>2小时前</span>
@@ -53,8 +53,8 @@
 					</tbody>
 				</table>
 			</div>
+		</div>
 
-		</div>	
 	</div>
 
 {% endblock %}
